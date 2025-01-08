@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Resume</title>
+    <link rel="stylesheet" type="text/css" href="mestyly.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="sidebar">
+    <h1>Hafiz Ahmad</h1>
+    <h2>My Resume</h2>
+    <ul id="nav">
+      <li><a href="index.html">Home</a><span>/</span></li>
+      <li><a href="xperience.html">Experience</a><span>/</span></li>
+      <li><a href="edukasion.html">Education</a><span>/</span></li>
+      <li><a href="skill.html">Skill</a><span>/</span></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <div id="bio"> <img class="author-img" src="images/me.png" alt="Myself">
+      <h3>About ME</h3>
+      <p>Assalamualaikum, my name is Muhammad Hafiz Bin Ahmad Ridzuan. I am a student of <abbr title="Universiti Teknologi Mara">UiTM</abbr> Machang studying in Diploma of Information Management. This is my resume.</p>
+    </div>
+    <div class="sidebar-line"></div>
+    <audio controls>
+      <source src="audio/solitud.mp3" type="audio/mp3">
+    </audio>
+    <div id="footer">
+      <p>Adresses</p>
+        <address>
+         Muhammad Hafiz Bin Ahmad Ridzuan<br>
+         2022486986<br>
+         011-19443242<br>fhizes85@gmail.com
+         </address>
+    </div>
+  </div>
+  <div id="content">
+    <h1>Biodata</h1>
+    <img id="bio-img" src="images/me_2.jpeg" alt="Myself" width="300px">
+     <p>
+        <button type="button" onclick="famili(1)">Family</button>
+    </p>
+    <script>
+      function famili(a)
+        {
+            var xpic;
+            if (a==0)
+            {
+                pic="images/me_2.jpeg"
+            }
+            else
+            {
+                pic="images/famili.jpeg"
+            }
+            document.getElementById('bio-img').src=pic
+            document.getElementById('image2').src=pic
+        }
+    
+        document.getElementById("bio-img").src = "images/me_2.jpeg"; 
+        document.getElementById("image2").src = "images/famili.jpeg"; 
+    </script>
+    <table>
+      <tr>
+        <th colspan="2">About MYSELF</th>
+      </tr>
+      <tr>  
+        <th>NAME</th>
+        <td>Muhammad Hafiz Bin Ahmad Ridzuan</td>
+      </tr>
+      <tr>
+        <th>DATE OF BIRTH</th>
+        <td>1 July 2004 (21)</td>
+      </tr>
+      <tr>
+        <th>PLACE OF BIRTH</th>
+        <td>Ampang Puteri Specialist Hospital Selangor</td>
+      </tr>
+      <tr>
+        <th>ADDRESSS</th>
+        <td>A-1-1, Kuarters Kediaman Kakitangan Awam, Jalan Dutamas 3 off Jalan Duta, Segambut, 50480, Kuala Lumpur</td>
+      </tr>
+      <tr>
+        <th colspan="2">About FAMILY</th>
+      </tr>
+      <tr>
+        <th>My Father</th>
+        <td>Ahmad Ridzuan Bin Mohamad</td>
+      </tr>
+      <tr>
+        <th>My Mother</th>
+        <td>Nor Hasni Binti Che Hassan</td>
+      </tr>
+      <tr>
+        <th rowspan="5">My Sibling</th>
+        <td>Nur Nadirah Ridhwah Binti Ahmad Ridzuan</td>
+      </tr>
+      <tr>
+        <td>Nur Nabila Radiah Binti Ahmad Ridzuan</td>
+      </tr>
+      <tr>
+        <td>Muhammad Hafiz Bin Ahmad Ridzuan <i>(me)</i></td>
+      </tr>
+      <tr>
+        <td>Nur Najwa Aqilah Binti Ahmad Ridzuan</td>
+      </tr>
+      <tr>
+        <td>Nur Najah Aleeye Binti Ahmad Ridzuan</td>
+      </tr>
+    </table>
+</div>
+</body>
+</html>
+
